@@ -1,6 +1,7 @@
 # project imports
 from utils.constants import INTRO
 
+
 # print Hello World!
 print("Hello World!")
 
@@ -20,6 +21,7 @@ def get_user_name():
     """
     Takes name from the user through input and outputs it with, "Hello, my name is {user}!"
     """
+    # run this block of code till we get a valid input
     while True:
         user_name = input("Please enter your name: ")
         try:
@@ -32,10 +34,12 @@ def get_user_name():
         except:
             print("Please enter a valid name!")
 
+# assigning a variable to the output of the function
 get_user_name_output = get_user_name()
+# print the name of the user
 print(get_user_name_output[0])
-# print("First three characters are: "+str(get_user_name_output[1]))
 
+# print first 3 characters of the user_name
 print("The first three characters in user_name are")
 
 if len(get_user_name_output[1]) < 3:
@@ -53,10 +57,14 @@ print("length of the user_name variable is: " + str(get_user_name_output[2]))
 
 
 lst = [1, 2, 41, 23, 4, 212, 2]
+# print the list in reverse
 print("The list in reverse is: " + str(lst[::-1]))
 
+# return a sublist which has numbers less than the number entered by the user.
+# run this block of code till we get a valid input
 while True:
     num = input("Enter a number: ")
+    # new list which will have the numbers less than the number entered by the user
     new_lst = []
     try:
         if num is "":
