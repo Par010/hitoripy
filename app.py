@@ -30,7 +30,7 @@ def get_user_name():
             else:
                 len_of_user_name = len(user_name)
                 first_three_chars = list(user_name)[:3]
-                return [f"{INTRO}{str(user_name).capitalize()}!", first_three_chars, len_of_user_name, user_name]
+                return [f"{INTRO}{str(user_name).capitalize()}!", first_three_chars]
         except:
             print("Please enter a valid name!")
 
@@ -52,9 +52,11 @@ for char in list(get_user_name_output[1]):
 # math calculation
 math_calculation = (((1+5)*7)+6)
 length_of_math_calculation = len(str(math_calculation))
-print("The match calculation (((1+5)*7)+6) is " + str(math_calculation))
-print("length of the math calculation " + "((1+5)*7)+6))" + " is: " + str(length_of_math_calculation))
-print("length of the user_name variable -> " + str(get_user_name_output[3]) + " is: " + str(get_user_name_output[2]))
+print("The maths calculation (((1+5)*7)+6) is " + str(math_calculation))
+
+# print the string variable
+display_str_var = len(str_var)
+print("The length of string variable str_var is " + str(display_str_var))
 
 
 lst = [1, 2, 41, 23, 4, 212, 2]
