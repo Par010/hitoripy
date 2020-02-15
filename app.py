@@ -30,7 +30,7 @@ def get_user_name():
             else:
                 len_of_user_name = len(user_name)
                 first_three_chars = list(user_name)[:3]
-                return [f"{INTRO}{str(user_name).capitalize()}!", first_three_chars, len_of_user_name]
+                return [f"{INTRO}{str(user_name).capitalize()}!", first_three_chars, len_of_user_name, user_name]
         except:
             print("Please enter a valid name!")
 
@@ -52,13 +52,14 @@ for char in list(get_user_name_output[1]):
 # math calculation
 math_calculation = (((1+5)*7)+6)
 length_of_math_calculation = len(str(math_calculation))
-print("length of the math calculation is: " + str(length_of_math_calculation))
-print("length of the user_name variable is: " + str(get_user_name_output[2]))
+print("The match calculation (((1+5)*7)+6) is " + str(math_calculation))
+print("length of the math calculation " + "((1+5)*7)+6))" + " is: " + str(length_of_math_calculation))
+print("length of the user_name variable -> " + str(get_user_name_output[3]) + " is: " + str(get_user_name_output[2]))
 
 
 lst = [1, 2, 41, 23, 4, 212, 2]
 # print the list in reverse
-print("The list in reverse is: " + str(lst[::-1]))
+print("The list -> " + str(lst) + " in reverse is: " + str(lst[::-1]))
 
 # return a sublist which has numbers less than the number entered by the user.
 # run this block of code till we get a valid input
@@ -72,7 +73,7 @@ while True:
         else:
             num = float(num)
             new_lst = filter((lambda x: float(x) < num), lst)
-            print(list(new_lst))
+            print("The new list which has values less than " + str(num) + " is \n" + str(list(new_lst)))
             break
     except ValueError:
         print("Please enter a valid number!")
