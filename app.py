@@ -61,7 +61,8 @@ print("The length of string variable str_var is " + str(display_str_var))
 
 lst = [1, 2, 41, 23, 4, 212, 2]
 # print the list in reverse
-print("The list -> " + str(lst) + " in reverse is: " + str(lst[::-1]))
+rev_list = lst[::-1]
+print("The list -> " + str(lst) + " in reverse is: " + str(rev_list))
 
 # return a sublist which has numbers less than the number entered by the user.
 # run this block of code till we get a valid input
